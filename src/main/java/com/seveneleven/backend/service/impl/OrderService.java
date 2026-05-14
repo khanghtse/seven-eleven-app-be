@@ -1,4 +1,4 @@
-package com.seveneleven.backend.service;
+package com.seveneleven.backend.service.impl;
 
 import com.seveneleven.backend.dto.CreateOrderRequest;
 import com.seveneleven.backend.dto.OrderItemRequest;
@@ -10,6 +10,7 @@ import com.seveneleven.backend.entity.Product;
 import com.seveneleven.backend.exception.BadRequestException;
 import com.seveneleven.backend.repository.OrderRepository;
 import com.seveneleven.backend.repository.ProductRepository;
+import com.seveneleven.backend.service.IOrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,7 +20,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class OrderService implements  IOrderService {
+public class OrderService implements IOrderService {
 
     private final OrderRepository orderRepository;
     private final ProductRepository productRepository;

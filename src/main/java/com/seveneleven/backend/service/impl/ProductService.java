@@ -1,9 +1,10 @@
-package com.seveneleven.backend.service;
+package com.seveneleven.backend.service.impl;
 
 import com.seveneleven.backend.dto.ProductResponse;
 import com.seveneleven.backend.entity.Product;
 import com.seveneleven.backend.exception.ResourceNotFoundException;
 import com.seveneleven.backend.repository.ProductRepository;
+import com.seveneleven.backend.service.IProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
