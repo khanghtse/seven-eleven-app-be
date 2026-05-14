@@ -1,4 +1,4 @@
-# Mini Mart Backend
+# 7-Eleven Backend
 
 Backend API cho hệ thống 7-Eleven được xây dựng bằng Spring Boot.
 
